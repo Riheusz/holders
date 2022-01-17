@@ -120,7 +120,7 @@ mouse.KeyDown:Connect(
 
 			if getgenv().Webhookmode == true then 
 
-				sendMessage("UNLOCKED | "..Plr.DisplayName.." | "..Plr.Name |")
+				sendMessage("UNLOCKED | "..Plr.DisplayName.." | "..Plr.Name" |")
 
 			end
 			-- TextLabel.TextColor3 = Color3.fromRGB(255, 20, 75)
@@ -148,13 +148,13 @@ mouse.KeyDown:Connect(
 
 			if getgenv().CopyMode == true then
 
-				setclipboard("Locked on "..Plr.DisplayName.." Aka "..Plr.Name)
+				setclipboard("LOCKED ON "..Plr.DisplayName.." | "..Plr.Name)
 
 			end
 
 			if getgenv().Webhookmode == true then 
 
-				sendMessage(LOCKED | "..Plr.DisplayName.." | "..Plr.Name |)
+				sendMessage("LOCKED | "..Plr.DisplayName.." | "..Plr.Name" |")
 
 			end
 
