@@ -120,7 +120,7 @@ mouse.KeyDown:Connect(
 
 			if getgenv().Webhookmode == true then 
 
-				sendMessage("UNLOCKED | hoodsense.cc ")
+				sendMessage("**UNLOCKED** *|* "..Plr.DisplayName.." *|* "..Plr.Name **|**")
 
 			end
 			-- TextLabel.TextColor3 = Color3.fromRGB(255, 20, 75)
@@ -154,7 +154,7 @@ mouse.KeyDown:Connect(
 
 			if getgenv().Webhookmode == true then 
 
-				sendMessage("LOCKED | "..Plr.DisplayName.." / "..Plr.Name)
+				sendMessage(**LOCKED** *|* "..Plr.DisplayName.." *|* "..Plr.Name **|**)
 
 			end
 
@@ -3334,7 +3334,7 @@ local aimbotPart = ""
 local aimFov = 40
 print("[hoodsense.cc] Made by ekso (557595801682182147)")
 print("[hoodsense.cc] DM ME ALL BUGS!")
-print("[hoodsense.cc] EXECUTED VERSION: 1.2!")
+print("[hoodsense.cc] EXECUTED VERSION: 1.5!")
 print("[hoodsense.cc] SILIENT AIM BIND: C")
 print("[hoodsense.cc] AIM LOCK BIND: Q")
 print("[hoodsense.cc] SPEED GLITCH BIND: X")
