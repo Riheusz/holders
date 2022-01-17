@@ -120,7 +120,7 @@ mouse.KeyDown:Connect(
 
 			if getgenv().Webhookmode == true then 
 
-				sendMessage("UNLOCKED | "..Plr.DisplayName.." | "..Plr.Name" |")
+				sendMessage("UNLOCKED | hoodsense.cc ")
 
 			end
 			-- TextLabel.TextColor3 = Color3.fromRGB(255, 20, 75)
@@ -136,7 +136,7 @@ mouse.KeyDown:Connect(
 					"SendNotification",
 					{
 						Title = "hoodsense.cc",
-						Text = "LOCKED | "..Plr.DisplayName.." | "..Plr.Name" |,
+						Text = "LOCKED | "..Plr.DisplayName.." / "..Plr.Name,
 						Icon = "http://www.roblox.com/asset/?id=8388873148",
 						Duration = 1,
 						Button1 = "",
@@ -148,13 +148,13 @@ mouse.KeyDown:Connect(
 
 			if getgenv().CopyMode == true then
 
-				setclipboard("LOCKED ON "..Plr.DisplayName.." | "..Plr.Name)
+				setclipboard("Locked on "..Plr.DisplayName.." Aka "..Plr.Name)
 
 			end
 
 			if getgenv().Webhookmode == true then 
 
-				sendMessage("LOCKED | "..Plr.DisplayName.." | "..Plr.Name" |")
+				sendMessage("LOCKED | "..Plr.DisplayName.." / "..Plr.Name)
 
 			end
 
