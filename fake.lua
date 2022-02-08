@@ -117,7 +117,7 @@ local RPG_Square_Rockets = Instance.new("TextButton")
 local Back_Frame_7 = Instance.new("Frame")
 local Block_Mask = Instance.new("TextButton")
  
-Da_HoodGUI.Name = "Fake Macro"
+Da_HoodGUI.Name = "Extras"
 Da_HoodGUI.Parent = game.CoreGui
 Da_HoodGUI.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 Da_HoodGUI.DisplayOrder = 1000000000
@@ -153,7 +153,7 @@ Exit.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Exit.Position = UDim2.new(0.881572902, 0, -0.00722351577, 0)
 Exit.Size = UDim2.new(0.0974349454, 0, 0.260665476, 0)
 Exit.Font = Enum.Font.Cartoon
-Exit.Text = "X"
+Exit.Text = "x"
 Exit.TextColor3 = Color3.fromRGB(255, 0, 0)
 Exit.TextScaled = true
 Exit.TextSize = 16.000
