@@ -9,7 +9,6 @@ local garbage = {
     "my grandma has more skill than you";
     "trash";
     "LOL";
-    "LMAO";
     "imagine being you right now";
     "xd";
     "stinky head";
