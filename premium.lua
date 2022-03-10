@@ -1,6 +1,6 @@
 --Boronide™ Premium Obfuscation, v0.4.0
 game.StarterGui:SetCore("SendNotification", {
-    Title = "Premium.";
+    Title = "Premium";
     Text = "Premium is running with modded carl's ac.";
     Duration = "30";
     Button1 = "Okay!";
