@@ -42,13 +42,14 @@ local garbage = {
     "get good, get hoodsense.cc";
     "XD";
     "/e dab";
+    "free wanted LOL";
     "./e dab";
     "time to take out the trash";
     "hoodsense winning, L";
     "did you get worse?";
     "I'm surprised you haven't quit yet";
     "Man your aim is nothing.";
-
+    "Bros playing without hoodsense.cc"
 
 
 
