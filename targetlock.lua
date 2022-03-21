@@ -7,7 +7,7 @@ getgenv().Silent = {
 }
 local Image = {
     Enabled = false,
-    Url = "https://discord.gg/axq"
+    Url = "https://kurwa.club/u/saQxaud.png"
 }
 local Dot = {
     Enabled = true,
@@ -65,7 +65,7 @@ game:GetService("UserInputService").InputBegan:Connect(
                 if Locking then
                     Plr = getClosestPlayerToCursor()
                      pcall(function()
-                    x("hoodsense.cc | Locked on "..Plr.DisplayName.." / "..Plr.Name)
+                    x("Locked on "..Plr.DisplayName.." Aka "..Plr.Name)
                     end)
                 elseif not Locking then
                     if Plr then
@@ -144,4 +144,3 @@ game:GetService("RunService").RenderStepped:connect(
             Circle.Visible = false
         end
     end)
-print("[hoodsense.cc] Credits to .gg/nives")
