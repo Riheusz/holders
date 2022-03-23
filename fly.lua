@@ -86,7 +86,7 @@ local mouse = plr:GetMouse()
 				keys.a=true
 			elseif key=="d" then
 				keys.d=true
-			elseif key=="z" then
+			elseif key=="x" then
 				if flying==true then
 					flying=false
 				else
