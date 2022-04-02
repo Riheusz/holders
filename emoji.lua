@@ -8,7 +8,7 @@ local StarId = {
 local CrownId = {}
 
 local DiamondId = {
-    [3215415009]
+    [3215415009] = true
 }
 
 function premium()
