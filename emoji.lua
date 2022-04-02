@@ -1,15 +1,18 @@
 --// Credits to space im too lazy to do this uwu love you space \\--
 
 local StarId = {
+	[3254506659] = true,
+	[1999623054] = true,
+	[1456523092] = true,
+	[2244576018] = true,
+}
+
+local CrownId = {
 	[2452452863] = true,
-
+	[3215415009] = true,
 }
 
-local CrownId = {}
-
-local DiamondId = {
-    [3215415009] = true
-}
+local DiamondId = {}
 
 function premium()
 	for _,v in pairs(game:GetService('Players'):GetChildren()) do
