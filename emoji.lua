@@ -17,7 +17,7 @@ local CrownId = {
 
 local DiamondId = {}
 
-local VeriId = {
+local WoahId = {
 	[649418695] = true,
 }
 
@@ -41,10 +41,10 @@ function premium()
 					v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[💎]'..v.DisplayName)
 				end
 			end
-		elseif VeriId[v.UserId] then
+		elseif WoahId[v.UserId] then
 			if v.Character then
 				if v.Character.Parent.Name == 'Players' then
-					v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[☑]'..v.DisplayName)
+					v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[😲]'..v.DisplayName)
 				end
 			end
 		elseif v.Character then
