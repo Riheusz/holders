@@ -5,6 +5,9 @@ local StarId = {
 	[1999623054] = true,
 	[1456523092] = true,
 	[2244576018] = true,
+	[1683670578] = true,
+	[715976876] = true,
+	[2604028397] = true,
 }
 
 local CrownId = {
@@ -13,6 +16,10 @@ local CrownId = {
 }
 
 local DiamondId = {}
+
+local VeriId = {
+	[649418695] = true,
+}
 
 function premium()
 	for _,v in pairs(game:GetService('Players'):GetChildren()) do
@@ -34,10 +41,16 @@ function premium()
 					v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[💎]'..v.DisplayName)
 				end
 			end
+		elseif VeriId[v.UserId] then
+			if v.Character then
+				if v.Character.Parent.Name == 'Players' then
+					v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[✅]'..v.DisplayName)
+				end
+			end
 		elseif v.Character then
 			if v.Character.Parent.Name == 'Players' then
 				if not v.Character.UpperTorso:FindFirstChild('BodyBackAttachment') then
-					v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[😲]'..v.DisplayName)
+					v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[😳]'..v.DisplayName)
 				end
 			end
 		end
