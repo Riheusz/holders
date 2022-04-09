@@ -1,4 +1,3 @@
-local animationgamepass = Section4:CreateButton("Animation Gamepass", function()
     local Folder = Instance.new('Folder', game:GetService("Workspace"))
     local AnimationPack = game:GetService("Players").LocalPlayer.PlayerGui.MainScreenGui.AnimationPack
     local ScrollingFrame = AnimationPack.ScrollingFrame
@@ -283,4 +282,3 @@ local animationgamepass = Section4:CreateButton("Animation Gamepass", function()
             Praying:Play()
         end)
     end)
-end)
