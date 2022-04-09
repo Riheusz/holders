@@ -1,186 +1,286 @@
-            for _, v in next, game:GetService("CoreGui"):GetChildren() do
-                if (v.Name:match("FreeAnimationPack")) then
-                    v:Destroy()
+local animationgamepass = Section4:CreateButton("Animation Gamepass", function()
+    local Folder = Instance.new('Folder', game:GetService("Workspace"))
+    local AnimationPack = game:GetService("Players").LocalPlayer.PlayerGui.MainScreenGui.AnimationPack
+    local ScrollingFrame = AnimationPack.ScrollingFrame
+    local CloseButton = AnimationPack.CloseButton
+
+    AnimationPack.Visible = true
+
+    local LeanAnimation = Instance.new("Animation", Folder)
+    LeanAnimation.Name = "LeanAnimation"
+    LeanAnimation.AnimationId = "rbxassetid://3152375249"
+    local Lean = game:GetService("Players").LocalPlayer.Character.Humanoid:LoadAnimation(LeanAnimation)
+
+    local LayAnimation = Instance.new("Animation", Folder)
+    LayAnimation.Name = "LayAnimation"
+    LayAnimation.AnimationId = "rbxassetid://3152378852"
+    local Lay = game:GetService("Players").LocalPlayer.Character.Humanoid:LoadAnimation(LayAnimation)
+
+    local Dance1Animation = Instance.new("Animation", Folder)
+    Dance1Animation.Name = "Dance1Animation"
+    Dance1Animation.AnimationId = "rbxassetid://3189773368"
+    local Dance1 = game:GetService("Players").LocalPlayer.Character.Humanoid:LoadAnimation(Dance1Animation)
+
+    local Dance2Animation = Instance.new("Animation", Folder)
+    Dance2Animation.Name = "Dance2Animation"
+    Dance2Animation.AnimationId = "rbxassetid://3189776546"
+    local Dance2 = game:GetService("Players").LocalPlayer.Character.Humanoid:LoadAnimation(Dance2Animation)
+
+    local GreetAnimation = Instance.new("Animation", Folder)
+    GreetAnimation.Name = "GreetAnimation"
+    GreetAnimation.AnimationId = "rbxassetid://3189777795"
+    local Greet = game:GetService("Players").LocalPlayer.Character.Humanoid:LoadAnimation(GreetAnimation)
+
+    local PrayingAnimation = Instance.new("Animation", Folder)
+    PrayingAnimation.Name = "PrayingAnimation"
+    PrayingAnimation.AnimationId = "rbxassetid://3487719500"
+    local Praying = game:GetService("Players").LocalPlayer.Character.Humanoid:LoadAnimation(PrayingAnimation)
+
+    for i,v in pairs(ScrollingFrame:GetChildren()) do
+        if v.Name == "TextButton" then
+            if v.Text == "Lean" then
+                v.Name = "LeanButton"
+            end
+        end
+    end
+
+    for i,v in pairs(ScrollingFrame:GetChildren()) do
+        if v.Name == "TextButton" then
+            if v.Text == "Lay" then
+                v.Name = "LayButton"
+            end
+        end
+    end
+
+    for i,v in pairs(ScrollingFrame:GetChildren()) do
+        if v.Name == "TextButton" then
+            if v.Text == "Dance1" then
+                v.Name = "Dance1Button"
+            end
+        end
+    end
+
+    for i,v in pairs(ScrollingFrame:GetChildren()) do
+        if v.Name == "TextButton" then
+            if v.Text == "Dance2" then
+                v.Name = "Dance2Button"
+            end
+        end
+    end
+
+    for i,v in pairs(ScrollingFrame:GetChildren()) do
+        if v.Name == "TextButton" then
+            if v.Text == "Greet" then
+                v.Name = "GreetButton"
+            end
+        end
+    end
+
+    for i,v in pairs(ScrollingFrame:GetChildren()) do
+        if v.Name == "TextButton" then
+            if v.Text == "Praying" then
+                v.Name = "PrayingButton"
+            end
+        end
+    end
+
+    function Stop()
+        Lay:Stop()
+        Lean:Stop()
+        Dance1:Stop()
+        Dance2:Stop()
+        Greet:Stop()
+        Praying:Stop()
+    end
+
+    local LeanTextButton = ScrollingFrame.LeanButton
+    local LayTextButton = ScrollingFrame.LayButton
+    local Dance1TextButton = ScrollingFrame.Dance1Button
+    local Dance2TextButton = ScrollingFrame.Dance2Button
+    local GreetTextButton = ScrollingFrame.GreetButton
+    local PrayingTextButton = ScrollingFrame.PrayingButton
+
+    AnimationPack.MouseButton1Click:Connect(function()
+        if ScrollingFrame.Visible == false then
+            ScrollingFrame.Visible = true
+            CloseButton.Visible = true
+        end
+    end)
+    CloseButton.MouseButton1Click:Connect(function()
+        if ScrollingFrame.Visible == true then
+            ScrollingFrame.Visible = false
+            CloseButton.Visible = false
+        end
+    end)
+    LeanTextButton.MouseButton1Click:Connect(function()
+        Stop()
+        Lean:Play()
+    end)
+    LayTextButton.MouseButton1Click:Connect(function()
+        Stop()
+        Lay:Play()
+    end)
+    Dance1TextButton.MouseButton1Click:Connect(function()
+        Stop()
+        Dance1:Play()
+    end)
+    Dance2TextButton.MouseButton1Click:Connect(function()
+        Stop()
+        Dance2:Play()
+    end)
+    GreetTextButton.MouseButton1Click:Connect(function()
+        Stop()
+        Greet:Play()
+    end)
+    PrayingTextButton.MouseButton1Click:Connect(function()
+        Stop()
+        Praying:Play()
+    end)
+
+    game:GetService("Players").LocalPlayer.Character.Humanoid.Running:Connect(function()
+        Stop()
+    end)
+    game:GetService("Players").LocalPlayer.Character.Humanoid.Died:Connect(function()
+        Stop()
+        repeat
+            wait()
+        until game:GetService("Players").LocalPlayer.Character.Humanoid.Health == 100
+        wait(1)
+        local AnimationPack = game:GetService("Players").LocalPlayer.PlayerGui.MainScreenGui.AnimationPack
+        local ScrollingFrame = AnimationPack.ScrollingFrame
+        local CloseButton = AnimationPack.CloseButton
+
+        AnimationPack.Visible = true
+
+        local LeanAnimation = Instance.new("Animation", Folder)
+        LeanAnimation.Name = "LeanAnimation"
+        LeanAnimation.AnimationId = "rbxassetid://3152375249"
+        local Lean = game:GetService("Players").LocalPlayer.Character.Humanoid:LoadAnimation(LeanAnimation)
+
+        local LayAnimation = Instance.new("Animation", Folder)
+        LayAnimation.Name = "LayAnimation"
+        LayAnimation.AnimationId = "rbxassetid://3152378852"
+        local Lay = game:GetService("Players").LocalPlayer.Character.Humanoid:LoadAnimation(LayAnimation)
+
+        local Dance1Animation = Instance.new("Animation", Folder)
+        Dance1Animation.Name = "Dance1Animation"
+        Dance1Animation.AnimationId = "rbxassetid://3189773368"
+        local Dance1 = game:GetService("Players").LocalPlayer.Character.Humanoid:LoadAnimation(Dance1Animation)
+
+        local Dance2Animation = Instance.new("Animation", Folder)
+        Dance2Animation.Name = "Dance2Animation"
+        Dance2Animation.AnimationId = "rbxassetid://3189776546"
+        local Dance2 = game:GetService("Players").LocalPlayer.Character.Humanoid:LoadAnimation(Dance2Animation)
+
+        local GreetAnimation = Instance.new("Animation", Folder)
+        GreetAnimation.Name = "GreetAnimation"
+        GreetAnimation.AnimationId = "rbxassetid://3189777795"
+        local Greet = game:GetService("Players").LocalPlayer.Character.Humanoid:LoadAnimation(GreetAnimation)
+
+        local PrayingAnimation = Instance.new("Animation", Folder)
+        PrayingAnimation.Name = "PrayingAnimation"
+        PrayingAnimation.AnimationId = "rbxassetid://3487719500"
+        local Praying = game:GetService("Players").LocalPlayer.Character.Humanoid:LoadAnimation(PrayingAnimation)
+
+        for i,v in pairs(ScrollingFrame:GetChildren()) do
+            if v.Name == "TextButton" then
+                if v.Text == "Lean" then
+                    v.Name = "LeanButton"
                 end
             end
+        end
 
-            local FreeAnimationPack = Instance.new("ScreenGui")
-            local AnimationPack = Instance.new("TextButton")
-            local Animations = Instance.new("ScrollingFrame")
-            local UIListLayout = Instance.new("UIListLayout")
-            local Lean = Instance.new("TextButton")
-            local Lay = Instance.new("TextButton")
-            local Dance1 = Instance.new("TextButton")
-            local Dance2 = Instance.new("TextButton")
-            local Greet = Instance.new("TextButton")
-            local ChestPump = Instance.new("TextButton")
-            local Praying = Instance.new("TextButton")
-            local Stop = Instance.new("TextButton")
-            local UniversalAnimation = Instance.new("Animation")
-        
-            -- // Utility
-            function stopTracks()
-                for _, v in next, game:GetService("Players").LocalPlayer.Character:FindFirstChildOfClass("Humanoid"):GetPlayingAnimationTracks() do
-                    if (v.Animation.AnimationId:match("rbxassetid")) then
-                        v:Stop()
-                    end
+        for i,v in pairs(ScrollingFrame:GetChildren()) do
+            if v.Name == "TextButton" then
+                if v.Text == "Lay" then
+                    v.Name = "LayButton"
                 end
             end
-        
-            function loadAnimation(id)
-                if UniversalAnimation.AnimationId == id then
-                    stopTracks()
-                    UniversalAnimation.AnimationId = "1"
-                else
-                    UniversalAnimation.AnimationId = id
-                    local animationTrack = game:GetService("Players").LocalPlayer.Character:FindFirstChildOfClass("Humanoid"):LoadAnimation(UniversalAnimation)
-                    animationTrack:Play()
+        end
+
+        for i,v in pairs(ScrollingFrame:GetChildren()) do
+            if v.Name == "TextButton" then
+                if v.Text == "Dance1" then
+                    v.Name = "Dance1Button"
                 end
             end
-        
+        end
 
-            FreeAnimationPack.Name = "FreeAnimationPack"
-            FreeAnimationPack.Parent = game.CoreGui
-            FreeAnimationPack.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
-        
-            AnimationPack.Name = "AnimationPack"
-            AnimationPack.Parent = FreeAnimationPack
-            AnimationPack.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-            AnimationPack.BorderSizePixel = 0
-            AnimationPack.Position = UDim2.new(0, 0, 0.388007045, 0)
-            AnimationPack.Size = UDim2.new(0, 100, 0, 20)
-            AnimationPack.Font = Enum.Font.SourceSansBold
-            AnimationPack.Text = "Animations"
-            AnimationPack.TextColor3 = Color3.fromRGB(0, 0, 0)
-            AnimationPack.TextSize = 18.000
-            AnimationPack.MouseButton1Click:Connect(function()
-                if (Animations.Visible == false) then
-                    Animations.Visible = true
+        for i,v in pairs(ScrollingFrame:GetChildren()) do
+            if v.Name == "TextButton" then
+                if v.Text == "Dance2" then
+                    v.Name = "Dance2Button"
                 end
-            end)
-        
-            Animations.Name = "Animations"
-            Animations.Parent = AnimationPack
-            Animations.Active = true
-            Animations.BackgroundColor3 = Color3.fromRGB(102, 102, 102)
-            Animations.Position = UDim2.new(-0.104712225, 0, -1.54173493, 0)
-            Animations.Size = UDim2.new(0, 120, 0, 195)
-            Animations.Visible = false
-            Animations.CanvasPosition = Vector2.new(0, 60.0000305)
-            Animations.CanvasSize = UDim2.new(0, 0, 1, 235)
-        
-            UIListLayout.Parent = Animations
-            UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
-            UIListLayout.Padding = UDim.new(0, 2)
-        
-            Lean.Name = "Lean"
-            Lean.Parent = Animations
-            Lean.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-            Lean.Size = UDim2.new(1, 0, 0, 30)
-            Lean.Font = Enum.Font.SourceSansBold
-            Lean.Text = "Lean"
-            Lean.TextColor3 = Color3.fromRGB(0, 0, 0)
-            Lean.TextSize = 14.000
-            Lean.MouseButton1Click:Connect(function()
-                stopTracks()
-                loadAnimation("rbxassetid://3152375249")
-            end)
-        
-            Lay.Name = "Lay"
-            Lay.Parent = Animations
-            Lay.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-            Lay.Size = UDim2.new(1, 0, 0, 30)
-            Lay.Font = Enum.Font.SourceSansBold
-            Lay.Text = "Lay"
-            Lay.TextColor3 = Color3.fromRGB(0, 0, 0)
-            Lay.TextSize = 14.000
-            Lay.MouseButton1Click:Connect(function()
-                stopTracks()
-                loadAnimation("rbxassetid://3152378852")
-            end)
-        
-            Dance1.Name = "Dance1"
-            Dance1.Parent = Animations
-            Dance1.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-            Dance1.Size = UDim2.new(1, 0, 0, 30)
-            Dance1.Font = Enum.Font.SourceSansBold
-            Dance1.Text = "Dance1"
-            Dance1.TextColor3 = Color3.fromRGB(0, 0, 0)
-            Dance1.TextSize = 14.000
-            Dance1.MouseButton1Click:Connect(function()
-                stopTracks()
-                loadAnimation("rbxassetid://3189773368")
-            end)
-        
-            Dance2.Name = "Dance2"
-            Dance2.Parent = Animations
-            Dance2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-            Dance2.Size = UDim2.new(1, 0, 0, 30)
-            Dance2.Font = Enum.Font.SourceSansBold
-            Dance2.Text = "Dance2"
-            Dance2.TextColor3 = Color3.fromRGB(0, 0, 0)
-            Dance2.TextSize = 14.000
-            Dance2.MouseButton1Click:Connect(function()
-                stopTracks()
-                loadAnimation("rbxassetid://3189776546")
-            end)
-        
-            Greet.Name = "Greet"
-            Greet.Parent = Animations
-            Greet.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-            Greet.Size = UDim2.new(1, 0, 0, 30)
-            Greet.Font = Enum.Font.SourceSansBold
-            Greet.Text = "Greet"
-            Greet.TextColor3 = Color3.fromRGB(0, 0, 0)
-            Greet.TextSize = 14.000
-            Greet.MouseButton1Click:Connect(function()
-                stopTracks()
-                loadAnimation("rbxassetid://3189777795")
-            end)
-        
-            ChestPump.Name = "ChestPump"
-            ChestPump.Parent = Animations
-            ChestPump.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-            ChestPump.Size = UDim2.new(1, 0, 0, 30)
-            ChestPump.Font = Enum.Font.SourceSansBold
-            ChestPump.Text = "Chest Pump"
-            ChestPump.TextColor3 = Color3.fromRGB(0, 0, 0)
-            ChestPump.TextSize = 14.000
-            ChestPump.MouseButton1Click:Connect(function()
-                stopTracks()
-                loadAnimation("rbxassetid://3189779152")
-            end)
-        
-            Praying.Name = "Praying"
-            Praying.Parent = Animations
-            Praying.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-            Praying.Size = UDim2.new(1, 0, 0, 30)
-            Praying.Font = Enum.Font.SourceSansBold
-            Praying.Text = "Praying"
-            Praying.TextColor3 = Color3.fromRGB(0, 0, 0)
-            Praying.TextSize = 14.000
-            Praying.MouseButton1Click:Connect(function()
-                stopTracks()
-                loadAnimation("rbxassetid://3487719500")
-            end)
-        
-            Stop.Name = "Stop"
-            Stop.Parent = Animations
-            Stop.BackgroundColor3 = Color3.fromRGB(255, 112, 112)
-            Stop.Size = UDim2.new(1, 0, 0, 30)
-            Stop.Font = Enum.Font.SourceSansBold
-            Stop.Text = "Stop Animation"
-            Stop.TextColor3 = Color3.fromRGB(0, 0, 0)
-            Stop.TextSize = 14.000
-            Stop.MouseButton1Click:Connect(function()
-                stopTracks()
-            end)
+            end
+        end
 
-            local plr = game.Players.LocalPlayer
-        
-            plr:GetMouse().KeyDown:Connect(function(K)
-                if K == "p" then
-                    Animations.Visible = false
+        for i,v in pairs(ScrollingFrame:GetChildren()) do
+            if v.Name == "TextButton" then
+                if v.Text == "Greet" then
+                    v.Name = "GreetButton"
                 end
-            end)
-        print("[hoodsense.cc] Animation Gamepass Loaded!")
+            end
+        end
+
+        for i,v in pairs(ScrollingFrame:GetChildren()) do
+            if v.Name == "TextButton" then
+                if v.Text == "Praying" then
+                    v.Name = "PrayingButton"
+                end
+            end
+        end
+
+        function Stop()
+            Lay:Stop()
+            Lean:Stop()
+            Dance1:Stop()
+            Dance2:Stop()
+            Greet:Stop()
+            Praying:Stop()
+        end
+
+        local LeanTextButton = ScrollingFrame.LeanButton
+        local LayTextButton = ScrollingFrame.LayButton
+        local Dance1TextButton = ScrollingFrame.Dance1Button
+        local Dance2TextButton = ScrollingFrame.Dance2Button
+        local GreetTextButton = ScrollingFrame.GreetButton
+        local PrayingTextButton = ScrollingFrame.PrayingButton
+
+        AnimationPack.MouseButton1Click:Connect(function()
+            if ScrollingFrame.Visible == false then
+                ScrollingFrame.Visible = true
+                CloseButton.Visible = true
+            end
+        end)
+        CloseButton.MouseButton1Click:Connect(function()
+            if ScrollingFrame.Visible == true then
+                ScrollingFrame.Visible = false
+                CloseButton.Visible = false
+            end
+        end)
+        LeanTextButton.MouseButton1Click:Connect(function()
+            Stop()
+            Lean:Play()
+        end)
+        LayTextButton.MouseButton1Click:Connect(function()
+            Stop()
+            Lay:Play()
+        end)
+        Dance1TextButton.MouseButton1Click:Connect(function()
+            Stop()
+            Dance1:Play()
+        end)
+        Dance2TextButton.MouseButton1Click:Connect(function()
+            Stop()
+            Dance2:Play()
+        end)
+        GreetTextButton.MouseButton1Click:Connect(function()
+            Stop()
+            Greet:Play()
+        end)
+        PrayingTextButton.MouseButton1Click:Connect(function()
+            Stop()
+            Praying:Play()
+        end)
+    end)
+end)
