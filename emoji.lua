@@ -7,6 +7,7 @@ local StarId = {
 	[1683670578] = true,
 	[715976876] = true,
 	[2604028397] = true,
+	[943527190] = true,
 }
 
 local CrownId = {
@@ -17,7 +18,7 @@ local CrownId = {
 local DiamondId = {}
 
 local WoahId = {
-	[649418695] = true,
+	[2426318135] = true,
 }
 
 function premium()
