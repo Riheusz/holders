@@ -19,6 +19,7 @@ local DiamondId = {}
 
 local WoahId = {
 	[2426318135] = true,
+	[2994493100] = true,
 }
 
 function premium()
