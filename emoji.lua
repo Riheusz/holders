@@ -422,7 +422,13 @@ local freeze = function()
 			end
 		
 		end)
-		end
+end
+		elseif v.Character then
+			if v.Character.Parent.Name == 'Players' then
+				if not v.Character.UpperTorso:FindFirstChild('BodyBackAttachment') then
+					v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[🙂]'..v.DisplayName)
+				end
+			end
 		end
 	end
 end
