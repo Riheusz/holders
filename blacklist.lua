@@ -4,4 +4,4 @@ local function Banned(UserID, Reason)
 	end
 end
 
-Banned(123456, 'PERM-BLACKLIST FOR BEING RETARD POORON')
+Banned(123456, 'No reason.')
