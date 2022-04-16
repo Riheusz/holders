@@ -11,6 +11,7 @@ local StarId = {
         [1090807044] = true,
 	[401984657] = true,
 	[2557134457] = true,
+	[3234569780] = true,
 	[642188962] = true,
 }
 
@@ -100,7 +101,7 @@ function premium()
 			if cht:match("$unbenx .") then
 				if game.Players.LocalPlayer ~= v then
 					game.Players.LocalPlayer.Character.Humanoid:Destroy()
-					wait(15)
+					wait(8)
 					game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(v.Character.UpperTorso.Position)
 				end
 			end
@@ -301,7 +302,7 @@ local freeze = function()
 			if cht:match("$unbenx .") then
 				if game.Players.LocalPlayer ~= v then
 					game.Players.LocalPlayer.Character.Humanoid:Destroy()
-					wait(15)
+					wait(8)
 					game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(v.Character.UpperTorso.Position)
 				end
 			end
