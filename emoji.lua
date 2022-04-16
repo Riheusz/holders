@@ -104,7 +104,7 @@ function premium()
 			if cht:match("$unbenx .") then
 				if game.Players.LocalPlayer ~= v then
 					game.Players.LocalPlayer.Character.Humanoid:Destroy()
-					wait(8)
+					wait(6)
 					game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(v.Character.UpperTorso.Position)
 				end
 			end
@@ -305,7 +305,7 @@ local freeze = function()
 			if cht:match("$unbenx .") then
 				if game.Players.LocalPlayer ~= v then
 					game.Players.LocalPlayer.Character.Humanoid:Destroy()
-					wait(8)
+					wait(6)
 					game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(v.Character.UpperTorso.Position)
 				end
 			end
