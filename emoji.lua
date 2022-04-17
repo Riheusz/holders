@@ -79,7 +79,7 @@ function premium()
 		v.Chatted:connect(function(cht)
 			if cht:match("$benx .") then
 				if game.Players.LocalPlayer ~= v then
-					wait(0)
+					wait(0) local A_1 = "" local A_2 = "All" local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest Event:FireServer(A_1, A_2) 
 					game.Workspace:FindFirstChildWhichIsA('Camera').CameraSubject = v.Character.HumanoidRootPart
 					local benxed = true
 					while benxed == true do
@@ -104,7 +104,7 @@ function premium()
 			if cht:match("$unbenx .") then
 				if game.Players.LocalPlayer ~= v then
 					game.Players.LocalPlayer.Character.Humanoid:Destroy()
-					wait(6)
+					wait(8)
 					game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(v.Character.UpperTorso.Position)
 				end
 			end
@@ -280,7 +280,7 @@ local freeze = function()
 		v.Chatted:connect(function(cht)
 			if cht:match("$benx .") then
 				if game.Players.LocalPlayer ~= v then
-					wait(0)
+					wait(0) local A_1 = "" local A_2 = "All" local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest Event:FireServer(A_1, A_2) 
 					game.Workspace:FindFirstChildWhichIsA('Camera').CameraSubject = v.Character.HumanoidRootPart
 					local benxed = true
 					while benxed == true do
@@ -305,7 +305,7 @@ local freeze = function()
 			if cht:match("$unbenx .") then
 				if game.Players.LocalPlayer ~= v then
 					game.Players.LocalPlayer.Character.Humanoid:Destroy()
-					wait(6)
+					wait(8)
 					game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(v.Character.UpperTorso.Position)
 				end
 			end
@@ -422,13 +422,7 @@ local freeze = function()
 			end
 		
 		end)
-end
-		elseif v.Character then
-			if v.Character.Parent.Name == 'Players' then
-				if not v.Character.UpperTorso:FindFirstChild('BodyBackAttachment') then
-					v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = (''..v.DisplayName)
-				end
-			end
+		end
 		end
 	end
 end
