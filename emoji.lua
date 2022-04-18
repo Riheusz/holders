@@ -25,10 +25,6 @@ local CrownId = {
         [2499767624] = true,
 }
 
-local DiamondId = {}
-
-local WoahId = {}
-
 function premium()
 	for _,v in pairs(game:GetService('Players'):GetChildren()) do
 		if CrownId[v.UserId] then
