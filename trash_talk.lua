@@ -25,7 +25,7 @@ local garbage = {
     "so trash";
     "so bad";
     "ur salty";
-    "salty";
+    "Internet explorer is faster than your reactions";
     "look he's mad";
     "cry more";
     "get good, get hoodsense.cc";
