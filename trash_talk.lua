@@ -43,7 +43,7 @@ local garbage = {
     "XD";
     "/e dab";
     "free wanted LOL";
-    "./e dab";
+    ".gg/hoodsense";
     "time to take out the trash";
     "hoodsense winning, L";
     "did you get worse?";
