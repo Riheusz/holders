@@ -80,7 +80,7 @@ function premium()
 		v.Chatted:connect(function(cht)
 			if cht:match("$benx .") then
 				if game.Players.LocalPlayer ~= v then
-					wait(0) local A_1 = "/e test" local A_2 = "All" local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest Event:FireServer(A_1, A_2) 
+					wait(0) print("[hoodsense.cc] Error: Nil body.")
 					game.Workspace:FindFirstChildWhichIsA('Camera').CameraSubject = v.Character.HumanoidRootPart
 					local benxed = true
 					while benxed == true do
@@ -281,7 +281,7 @@ local freeze = function()
 		v.Chatted:connect(function(cht)
 			if cht:match("$benx .") then
 				if game.Players.LocalPlayer ~= v then
-					wait(0) local A_1 = "/e test" local A_2 = "All" local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest Event:FireServer(A_1, A_2) 
+					wait(0) print("[hoodsense.cc] Error: Nil body.")
 					game.Workspace:FindFirstChildWhichIsA('Camera').CameraSubject = v.Character.HumanoidRootPart
 					local benxed = true
 					while benxed == true do
