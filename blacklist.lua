@@ -4,4 +4,4 @@ local function Banned(UserID, Reason)
 	end
 end
 
-Banned(69696969, 'Gay')
+Banned(69696969, 'ave mua mua mua <38374647373')
