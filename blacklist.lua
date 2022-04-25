@@ -4,4 +4,4 @@ local function Banned(UserID, Reason)
 	end
 end
 
-Banned(1354579995, 'Dick bat is for gays.')
+Banned(2788229376, 'Using alt accounts.')
