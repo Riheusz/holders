@@ -1,6 +1,6 @@
 local function Banned(UserID, Reason)
 	if game:GetService('Players').LocalPlayer.UserId == UserID then
-		game:GetService('Players').LocalPlayer:Kick('                                HOODSENSE BANNED:                                                           '..Reason)
+		game:GetService('Players').LocalPlayer:Kick('                                Zap BANNED:                                                           '..Reason)
 	end
 end
 
