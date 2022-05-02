@@ -1,6 +1,5 @@
 local StarId = {
 	[3128475189] = true,
-	[1456523092] = true,
 	[2244576018] = true,
 	[1683670578] = true,
  	[715976876] = true,
@@ -29,7 +28,6 @@ local StarId = {
 local CrownId = {
 	[2452452863] = true,
 	[3449237561] = true,
-	[688216848] = true,
 }
 
 function premium()
