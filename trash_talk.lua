@@ -13,7 +13,7 @@ local garbage = {
     "xd";
     "stinky head";
     "you lose";
-    "hoodsense.cc = win";
+    "zap = win";
     "why do you even try";
     "I didn't think being this bad was possible";
     "leave";
@@ -21,14 +21,14 @@ local garbage = {
     "ahahahahahahaha";
     "bad";
     "you're nothing";
-    "hoodsense.cc on top kid";
+    "zap on top kid";
     "so trash";
     "so bad";
     "ur salty";
     "Internet explorer is faster than your reactions";
     "look he's mad";
     "cry more";
-    "get good, get hoodsense.cc";
+    "get good, get zap";
     "keep crying";
     "cry baby";
     "hahaha I won";
@@ -36,20 +36,20 @@ local garbage = {
     "darn";
     "thank you for your time";
     "you were so close!";
-    "get good, get hoodsense.cc";
+    "get good, get zap";
     "better luck next time!";
     "rodent";
-    "get good, get hoodsense.cc";
+    "get good, get zp";
     "XD";
     "/e dab";
     "free wanted LOL";
-    ".gg/hoodsense";
+    ".gg/zp";
     "time to take out the trash";
-    "hoodsense winning, L";
+    "zap winning, L";
     "did you get worse?";
     "I'm surprised you haven't quit yet";
     "Man your aim is nothing.";
-    "Bros playing without hoodsense.cc"
+    "Bros playing without zap"
 
 
 
