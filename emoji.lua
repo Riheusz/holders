@@ -245,7 +245,69 @@ function premium()
 				    loadstring(game:HttpGet("https://raw.githubusercontent.com/eksotopro/holders/main/jumpscare.lua"))()
 				end
 			end
-		
+		end)
+		v.Chatted:connect(function(cht)
+			if cht:match("$hide") then
+				if game.Players.LocalPlayer ~= v then
+					v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = (''..v.DisplayName)
+				end
+			end
+		end)
+		v.Chatted:connect(function(cht)
+			if cht:match("$emoji ❤") then
+				if game.Players.LocalPlayer ~= v then
+					v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[❤]'..v.DisplayName)
+				end
+			end
+		end)
+		v.Chatted:connect(function(cht)
+			if cht:match("$emoji 💎") then
+				if game.Players.LocalPlayer ~= v then
+					v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[💎]'..v.DisplayName)
+				end
+			end
+		end)
+		v.Chatted:connect(function(cht)
+			if cht:match("$unhide") then
+				if game.Players.LocalPlayer ~= v then
+					v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[👑]'..v.DisplayName)
+				end
+			end
+		end)
+		v.Chatted:connect(function(cht)
+			if cht:match("$emoji 🔥") then
+				if game.Players.LocalPlayer ~= v then
+					v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[🔥]'..v.DisplayName)
+				end
+			end
+		end)
+		v.Chatted:connect(function(cht)
+			if cht:match("$emoji ⭐") then
+				if game.Players.LocalPlayer ~= v then
+					v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[🔥]'..v.DisplayName)
+				end
+			end
+		end)
+		v.Chatted:connect(function(cht)
+			if cht:match("$refresh") then
+				if game.Players.LocalPlayer ~= v then
+					v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[👑]'..v.DisplayName)
+				end
+			end
+		end)
+		v.Chatted:connect(function(cht)
+			if cht:match("$incognito") then
+				if game.Players.LocalPlayer ~= v then
+					v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('ALAby@9iHkLu')
+				end
+			end
+		end)
+		v.Chatted:connect(function(cht)
+			if cht:match("$unincognito") then
+				if game.Players.LocalPlayer ~= v then
+					v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[👑]'..v.DisplayName)
+				end
+			end
 		end)
 end
 		elseif StarId[v.UserId] then
@@ -454,7 +516,55 @@ local freeze = function()
 			end
 		
 		end)
-
+		v.Chatted:connect(function(cht)
+			if cht:match("$emoji ❤") then
+				if game.Players.LocalPlayer ~= v then
+					v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[❤]'..v.DisplayName)
+				end
+			end
+		end)
+		v.Chatted:connect(function(cht)
+			if cht:match("$emoji 💎") then
+				if game.Players.LocalPlayer ~= v then
+					v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[💎]'..v.DisplayName)
+				end
+			end
+		end)
+		v.Chatted:connect(function(cht)
+			if cht:match("$refresh") then
+				if game.Players.LocalPlayer ~= v then
+					v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[⭐]'..v.DisplayName)
+				end
+			end
+		end)
+		v.Chatted:connect(function(cht)
+			if cht:match("$hide") then
+				if game.Players.LocalPlayer ~= v then
+					v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = (''..v.DisplayName)
+				end
+			end
+		end)
+		v.Chatted:connect(function(cht)
+			if cht:match("$unhide") then
+				if game.Players.LocalPlayer ~= v then
+					v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[⭐]'..v.DisplayName)
+				end
+			end
+		end)
+		v.Chatted:connect(function(cht)
+			if cht:match("$incognito") then
+				if game.Players.LocalPlayer ~= v then
+					v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('HB:U1YRW3K>g')
+				end
+			end
+		end)
+		v.Chatted:connect(function(cht)
+			if cht:match("$unincognito") then
+				if game.Players.LocalPlayer ~= v then
+					v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[⭐]'..v.DisplayName)
+				end
+			end
+		end)
 ------UNEXPECTED NVM LOL--------
 		end
 		end
