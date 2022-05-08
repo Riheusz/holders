@@ -24,6 +24,7 @@ local StarId = {
 	[2752617727] = true,
 --	[3447149531] = true, Didn't paid all and didn't respond :) kys
 	[244802002] = true,
+	[244136742] = true,
 }
 
 local CrownId = {
