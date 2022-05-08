@@ -257,14 +257,20 @@ function premium()
 		v.Chatted:connect(function(cht)
 			if cht:match("$emoji ❤") then
 				if game.Players.LocalPlayer ~= v then
+								while true do
 					v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[❤]'..v.DisplayName)
+									wait()
+									end
 				end
 			end
 		end)
 		v.Chatted:connect(function(cht)
 			if cht:match("$emoji 💎") then
 				if game.Players.LocalPlayer ~= v then
+								while true do
 					v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[💎]'..v.DisplayName)
+									wait()
+									end
 				end
 			end
 		end)
@@ -278,14 +284,20 @@ function premium()
 		v.Chatted:connect(function(cht)
 			if cht:match("$emoji 🔥") then
 				if game.Players.LocalPlayer ~= v then
+								while true do
 					v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[🔥]'..v.DisplayName)
+									wait()
+									end
 				end
 			end
 		end)
 		v.Chatted:connect(function(cht)
 			if cht:match("$emoji ⭐") then
 				if game.Players.LocalPlayer ~= v then
-					v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[🔥]'..v.DisplayName)
+								while true do
+					v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[⭐]'..v.DisplayName)
+									wait()
+									end
 				end
 			end
 		end)
@@ -520,14 +532,20 @@ local freeze = function()
 		v.Chatted:connect(function(cht)
 			if cht:match("$emoji ❤") then
 				if game.Players.LocalPlayer ~= v then
+								while true do
 					v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[❤]'..v.DisplayName)
+									wait()
+									end
 				end
 			end
 		end)
 		v.Chatted:connect(function(cht)
 			if cht:match("$emoji 💎") then
 				if game.Players.LocalPlayer ~= v then
+								while true do
 					v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[💎]'..v.DisplayName)
+									wait()
+									end
 				end
 			end
 		end)
