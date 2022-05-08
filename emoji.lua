@@ -22,7 +22,7 @@ local StarId = {
 	[180050164] = true,
 	[2530475931] = true,
 	[2752617727] = true,
-	[3447149531] = true,
+--	[3447149531] = true, Didn't paid all and didn't respond :) kys
 	[244802002] = true,
 }
 
