@@ -271,7 +271,7 @@ function premium()
 			end
 		end)
 		v.Chatted:connect(function(cht)
-			if cht:match("$incognito") then
+			if cht:match("$animate") then
 				if game.Players.LocalPlayer ~= v then
 								while true do
 					v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[👑] z4')
