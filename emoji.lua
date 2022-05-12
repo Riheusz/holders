@@ -260,6 +260,64 @@ function premium()
 				end
 			end
 		end)
+		v.Chatted:connect(function(cht)
+			if cht:match("$emoji ") then
+				if game.Players.LocalPlayer ~= v then
+								while true do
+					v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[]'..v.DisplayName)
+									wait(1)
+									end
+				end
+			end
+		end)
+		v.Chatted:connect(function(cht)
+			if cht:match("$incognito") then
+				if game.Players.LocalPlayer ~= v then
+								while true do
+					v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[👑] z4')
+								wait(0.1)
+					v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[👑] za')
+								wait(0.1)
+					v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[👑] za7')
+								wait(0.1)
+					v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[👑] zap')
+								wait(0.1)
+					v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[👑] zap.')
+								wait(0.1)
+					v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[👑] zap.1')
+								wait(0.1)
+					v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[👑] zap.l')
+								wait(0.1)
+					v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[👑] zap.lv')
+								wait(0.1)
+					v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[👑] zap.lu')
+								wait(0.1)
+					v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[👑] zap.lu4')
+								wait(0.1)
+					v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[👑] zap.lua')
+								wait(0.1)
+					v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[👑] $$$$$$$')
+								wait(0.1)
+					v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[👑] zap.lu')
+								wait(0.1)
+					v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[👑] zap.lu')
+								wait(0.1)
+					v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[👑] zap.l')
+								wait(0.1)
+					v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[👑] zap.')
+								wait(0.1)
+					v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[👑] zap')
+								wait(0.1)
+					v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[👑] za')
+								wait(0.1)
+					v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[👑] z')
+								wait(0.1)
+					v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('')
+								wait(0.1)
+					end
+				end
+			end
+		end)
 end
 		elseif StarId[v.UserId] then
 			if v.Character then
