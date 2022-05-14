@@ -24,13 +24,13 @@ local StarId = {
 	[2752617727] = true,
 	[244802002] = true,
 	[244136742] = true,
-	[229198462] = true,
 	[1518463663] = true,
 }
 
 local StaffId = {
 	[2452452863] = true,
 	[3449237561] = true,
+	[229198462] = true,
 }
 
 local AdminId = {}
