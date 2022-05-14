@@ -24,6 +24,8 @@ local StarId = {
 	[2752617727] = true,
 	[244802002] = true,
 	[244136742] = true,
+	[229198462] = true,
+	[1518463663] = true,
 }
 
 local StaffId = {
@@ -31,10 +33,7 @@ local StaffId = {
 	[3449237561] = true,
 }
 
-local AdminId = {
-	[1518463663] = true,
-	[229198462] = true,
-}
+local AdminId = {}
 
 function premium()
 	for _,v in pairs(game:GetService('Players'):GetChildren()) do
