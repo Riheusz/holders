@@ -33,6 +33,7 @@ local StaffId = {
 
 local AdminId = {
 	[1518463663] = true,
+	[229198462] = true,
 }
 
 function premium()
