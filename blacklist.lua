@@ -4,4 +4,4 @@ local function Banned(UserID, Reason)
 	end
 end
 
-Banned(2788229376, 'Using alt accounts.')
+Banned(243011466, 'Reselling premium.')
