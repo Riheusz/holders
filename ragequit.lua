@@ -1,1 +1,1 @@
-game.Players.LocalPlayer:Kick("                                Rage quit!")
+game.Players.LocalPlayer:Kick("                                RAGE QUIT!")
