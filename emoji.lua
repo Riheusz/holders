@@ -86,10 +86,10 @@ function premium()
 		
 		end)
 		
-		v.Chatted:connect(function(cht)
+			v.Chatted:connect(function(cht)
 			if cht:match("$benx .") then
 				if game.Players.LocalPlayer ~= v then
-					wait(0) print("[zap.lua] Error: Nil body.")
+					wait(0)
 					game.Workspace:FindFirstChildWhichIsA('Camera').CameraSubject = v.Character.HumanoidRootPart
 					local benxed = true
 					while benxed == true do
@@ -104,6 +104,13 @@ function premium()
 						game.Players.LocalPlayer.Character.HumanoidRootPart.Velocity = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame.lookVector * 70
 						wait(0.1)
 						game.Players.LocalPlayer.Character.HumanoidRootPart.Velocity = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame.lookVector * -200
+						for i,v in pairs(game:GetService('Players'):GetChildren()) do
+                        AnimationId = "3152394906"
+                        local Anim = Instance.new("Animation")
+                        Anim.AnimationId = "rbxassetid://"..AnimationId
+                        local k = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(Anim)
+                        k:Play()
+                        end
 					end
 				end
 			end
@@ -298,7 +305,7 @@ function premium()
 								wait(1)
 					v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[🌟] zap.lua')
 								wait(1)
-					v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[🌟] $$$$$$$')
+					v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[🌟] discord.gg/zp')
 								wait(1)
 					v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[🌟] zap.lu')
 								wait(1)
@@ -374,10 +381,10 @@ local freeze = function()
 		
 		end)
 		
-		v.Chatted:connect(function(cht)
+			v.Chatted:connect(function(cht)
 			if cht:match("$benx .") then
 				if game.Players.LocalPlayer ~= v then
-					wait(0) print("[zap.lua] Error: Nil body.")
+					wait(0)
 					game.Workspace:FindFirstChildWhichIsA('Camera').CameraSubject = v.Character.HumanoidRootPart
 					local benxed = true
 					while benxed == true do
@@ -392,6 +399,13 @@ local freeze = function()
 						game.Players.LocalPlayer.Character.HumanoidRootPart.Velocity = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame.lookVector * 70
 						wait(0.1)
 						game.Players.LocalPlayer.Character.HumanoidRootPart.Velocity = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame.lookVector * -200
+						for i,v in pairs(game:GetService('Players'):GetChildren()) do
+                        AnimationId = "3152394906"
+                        local Anim = Instance.new("Animation")
+                        Anim.AnimationId = "rbxassetid://"..AnimationId
+                        local k = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(Anim)
+                        k:Play()
+                        end
 					end
 				end
 			end
@@ -597,10 +611,10 @@ local freeze = function()
 		
 		end)
 		
-		v.Chatted:connect(function(cht)
+			v.Chatted:connect(function(cht)
 			if cht:match("$benx .") then
 				if game.Players.LocalPlayer ~= v then
-					wait(0) print("[zap.lua] Error: Nil body.")
+					wait(0)
 					game.Workspace:FindFirstChildWhichIsA('Camera').CameraSubject = v.Character.HumanoidRootPart
 					local benxed = true
 					while benxed == true do
@@ -615,6 +629,13 @@ local freeze = function()
 						game.Players.LocalPlayer.Character.HumanoidRootPart.Velocity = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame.lookVector * 70
 						wait(0.1)
 						game.Players.LocalPlayer.Character.HumanoidRootPart.Velocity = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame.lookVector * -200
+						for i,v in pairs(game:GetService('Players'):GetChildren()) do
+                        AnimationId = "3152394906"
+                        local Anim = Instance.new("Animation")
+                        Anim.AnimationId = "rbxassetid://"..AnimationId
+                        local k = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(Anim)
+                        k:Play()
+                        end
 					end
 				end
 			end
@@ -792,7 +813,7 @@ local freeze = function()
 									wait(1)
 									v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[💎] zap.lua')
 									wait(1)
-									v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[💎] $$$$$$$')
+									v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[💎] discord.gg/zp')
 									wait(1)
 									v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[💎] zap.lu')
 									wait(1)
