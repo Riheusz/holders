@@ -22,7 +22,6 @@ local StarId = {
 	[3333530481] = true,
 	[53253037] = true,
 	[3173996460] = true,
-	[3570506864] = true,
 	[1866985431] = true,
 	[3476601774] = true,
 }
@@ -37,6 +36,7 @@ local AdminId = {
 	[1090807044] = true,
 	[1703714954] = true,
 	[3570500280] = true,
+	[3570506864] = true,
 }
 
 function premium()
