@@ -23,7 +23,7 @@ local StarId = {
 	[53253037] = true,
 	[3173996460] = true,
 	[1866985431] = true,
-	[520812787] = true, --do poki boostuje xd
+	[520812787] = true, --do poki boostuje xd $ spocony bojowkarz#0666 | 955449827896987648
 	[3476601774] = true,
 }
 
