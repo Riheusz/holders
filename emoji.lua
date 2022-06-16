@@ -26,6 +26,7 @@ local StarId = {
 	[520812787] = true, --do poki boostuje xd $ spocony bojowkarz#0666 | 955449827896987648
 	[3476601774] = true,
 	[2452452863] = true,
+	[1046414679] = true,
 }
 
 local StaffId = {
