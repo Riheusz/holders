@@ -23,6 +23,7 @@ local StarId = {
 	[53253037] = true,
 	[3173996460] = true,
 	[1866985431] = true,
+	[520812787] = true, --do poki boostuje xd
 	[3476601774] = true,
 }
 
