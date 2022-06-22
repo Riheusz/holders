@@ -23,7 +23,6 @@ local StarId = {
 	[53253037] = true,
 	[3173996460] = true,
 	[1866985431] = true,
-	[520812787] = true, --do poki boostuje xd $ spocony bojowkarz#0666 | 955449827896987648
 	[3476601774] = true,
 	[2452452863] = true,
 	[1046414679] = true,
@@ -31,7 +30,8 @@ local StarId = {
 	[3305299944] = true,
 	[1217455689] = true,
 	[2852027353] = true,
-	[676955456] = true,
+	[676955456] = true, --do poki boostuje Fafik#0001 | 504185631744983040
+	[3287732610] = true, --do poki boostuje Xszsy#9999 | 985054109281435659
 }
 
 local StaffId = {
