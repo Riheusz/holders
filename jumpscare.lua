@@ -1,4 +1,3 @@
-game.Players.LocalPlayer:Kick("PERMA BAN")
 local me = "popopo" -- You don't get jumpscared.
 while wait() do
 for i,v in pairs(game.Players:GetPlayers()) do
