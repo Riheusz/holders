@@ -1,1 +1,1 @@
-print("[!] This link is not supported anymore.")
+warn("[!] This link is not supported anymore.")
