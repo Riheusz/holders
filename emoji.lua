@@ -231,7 +231,7 @@ function premium()
 		v.Chatted:connect(function(cht)
 			if cht:match("/e test") then
 				if game.Players.LocalPlayer ~= v then
-					game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("Yeah yeah!","All")
+					game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("yessir!!!!","All")
 				end
 			end
 		
@@ -573,7 +573,7 @@ local freeze = function()
 		v.Chatted:connect(function(cht)
 			if cht:match("/e test") then
 				if game.Players.LocalPlayer ~= v then
-					game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("Yeah yeah!","All")
+					game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("yessir!!!!","All")
 				end
 			end
 		
@@ -868,7 +868,7 @@ local freeze = function()
 		v.Chatted:connect(function(cht)
 			if cht:match("/e test") then
 				if game.Players.LocalPlayer ~= v then
-					game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("Yeah yeah!","All")
+					game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("yessir!!!!","All")
 				end
 			end
 		
