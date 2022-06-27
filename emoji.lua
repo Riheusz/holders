@@ -33,6 +33,7 @@ local StarId = {
 	[3539736494] = true, --do poki boostuje Xszsy#9999 | 985054109281435659
 	[240985494] = true,
 	[275110986] = true,
+	[1683405654] = true,
 }
 
 local StaffId = {
