@@ -1,6 +1,3 @@
-if game:GetService("Workspace").Players[game.Players.LocalPlayer.Name].UpperTorso.WaistRigAttachment then
-    game:GetService("Workspace").Players[game.Players.LocalPlayer.Name].UpperTorso.WaistRigAttachment:Destroy()
-end
 local StarId = {
 	[244225295] = true,
 	[3323076730] = true,
