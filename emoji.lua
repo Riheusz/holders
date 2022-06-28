@@ -43,6 +43,7 @@ local AdminId = {
 	[336894935] = true,
 	[2452452863] = true,
 	[3449237561] = true,
+	[3570491828] = true,
 }
 
 local NiggaId = {
