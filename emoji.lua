@@ -36,14 +36,13 @@ local StarId = {
 	[1683405654] = true,
 }
 
-local StaffId = {
-	[2452452863] = true,
-	[3449237561] = true,
-}
+local StaffId = {}
 
 local AdminId = {
 	[1090807044] = true,
 	[336894935] = true,
+	[2452452863] = true,
+	[3449237561] = true,
 }
 
 function premium()
