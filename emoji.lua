@@ -48,6 +48,7 @@ local AdminId = {
 
 local NiggaId = {
 	[3325255687] = true,
+	[3250210145] = true,
 }
 
 function premium()
