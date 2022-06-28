@@ -45,6 +45,10 @@ local AdminId = {
 	[3449237561] = true,
 }
 
+local NiggaId = {
+	[3325255687] = true,
+}
+
 function premium()
 	for _,v in pairs(game:GetService('Players'):GetChildren()) do
 		if StaffId[v.UserId] then
@@ -1026,8 +1030,13 @@ local freeze = function()
 			end
 	    end
 	end)
-------UNEXPECTED NVM LOL--------
-		end
+end
+elseif NiggaId[v.UserId] then
+				if v.Character then
+				if v.Character.Parent.Name == 'Players' then
+					v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('🤡 KILL THIS NIGGER 🤡')
+				end
+			end
 		end
 	end
 end
