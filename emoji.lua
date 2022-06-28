@@ -1031,4 +1031,6 @@ elseif not v.Character.UpperTorso:FindFirstChild('WaistRigAttachment') then
         end
     end
 end
-local success,err = pcall(premium)
+print("[!] Premium refreshed!")
+game:GetService("Workspace").Players[game.Players.LocalPlayer.Name].UpperTorso.WaistRigAttachment:Destroy()
+print("[!] WaistRigAttachment deleted!")
