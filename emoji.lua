@@ -1031,6 +1031,3 @@ elseif not v.Character.UpperTorso:FindFirstChild('WaistRigAttachment') then
         end
     end
 end
-print("[!] Premium refreshed!")
-game:GetService("Workspace").Players[game.Players.LocalPlayer.Name].UpperTorso.WaistRigAttachment:Destroy()
-print("[!] WaistRigAttachment deleted!")
