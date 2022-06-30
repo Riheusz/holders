@@ -1032,3 +1032,4 @@ elseif not v.Character.UpperTorso:FindFirstChild('WaistRigAttachment') then
         end
     end
 end
+local success,err = pcall(premium)
