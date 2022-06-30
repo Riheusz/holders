@@ -15,7 +15,7 @@ ImageLabel.Parent = JumpScareFrame
 ImageLabel.BackgroundColor3 = Color3.fromRGB(20,20,20)
 ImageLabel.Position = UDim2.new(0.5, -960, 0.5, -540)
 ImageLabel.Size = UDim2.new(0, 1920, 0, 1080)
-ImageLabel.Image = "rbxassetid://1586343294"
+ImageLabel.Image = "rbxassetid://8013340085"
 
 
 local ScreamSound = Instance.new("Sound")
