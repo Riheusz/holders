@@ -27,7 +27,6 @@ local StarId = {
 	[1046414679] = true,
 	[3512136498] = true,
 	[3305299944] = true,
-	[1217455689] = true,
 	[2852027353] = true,
 	[676955456] = true,
 	[3539736494] = true,
@@ -35,16 +34,16 @@ local StarId = {
 	[275110986] = true,
 	[1683405654] = true,
 	[1728370995] = true,
+	[336894935] = true,
 }
 
 local StaffId = {}
 
 local AdminId = {
 	[1090807044] = true,
-	[336894935] = true,
 	[2452452863] = true,
 	[3449237561] = true,
-	[3570491828] = true,
+	[1217455689] = true,
 }
 
 local NiggaId = {
