@@ -36,7 +36,9 @@ local StarId = {
 	[336894935] = true,
 }
 
-local StaffId = {}
+local StaffId = {
+	[3570496940] = true,
+}
 
 local AdminId = {
 	[1090807044] = true,
