@@ -1,0 +1,2 @@
+STAFF = {}
+return STAFF
