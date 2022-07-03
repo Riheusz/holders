@@ -34,6 +34,5 @@ STAR = {
 	[275110986] = true,
 	[1683405654] = true,
 	[336894935] = true,
-	[3570496940] = true, --test premium remove.
 }
 return STAR
