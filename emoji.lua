@@ -39,9 +39,9 @@ local AdminId = {
 	[1217455689] = true, --greks gf 😇
 }
 
-local NiggaId = {
-	[3325255687] = true,
-	[3250210145] = true,
+local EnemyId = {
+	[3325255687] = true, --mokrajuleczka AKA 78_axvjb reason: sluring at me n wording at me.
+	[3250210145] = true, --madbouthath AKA joemamaXq reason: saying im skid and locking on legit ppl Xd
 }
 
 function premium()
@@ -1012,7 +1012,7 @@ v.Chatted:connect(function(cht)
 		end
     end
 end)
-elseif NiggaId[v.UserId] then
+elseif EnemyId[v.UserId] then
 	if v.Character then
 		if v.Character.Parent.Name == 'Players' then
 			v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('🤡 KILL THIS NIGGER 🤡')
