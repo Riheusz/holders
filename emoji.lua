@@ -42,6 +42,7 @@ local AdminId = {
 local EnemyId = {
 	[3325255687] = true, --mokrajuleczka AKA 78_axvjb reason: sluring at me n wording at me.
 	[3250210145] = true, --madbouthath AKA joemamaXq reason: saying im skid and locking on legit ppl Xd
+	[274408652] = true, --zeka#1389 (828656825930219571) DylanSantos2 reason: retarded godmode skid on rayx trying to fling while antifling, got his ip also LOL
 }
 
 function premium()
