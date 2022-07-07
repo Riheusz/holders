@@ -28,7 +28,6 @@ local StarId = {
 	[275110986] = true,
 	[1683405654] = true,
 	[3570496940] = true, --6grek
-	[2251054568] = true, --chi
 }
 
 local StaffId = {}
@@ -37,7 +36,6 @@ local AdminId = {
 	[1090807044] = true, --Chaotic
 	[2452452863] = true, --imgrek | not grek lmao
 	[3449237561] = true, --Adxn1337
-	[1217455689] = true, --greks gf 😇
 }
 
 local EnemyId = {
