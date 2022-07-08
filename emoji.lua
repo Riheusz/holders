@@ -14,23 +14,19 @@ local StarId = {
 	[676955456] = true, --504185631744983040
 	[240985494] = true, --891456482309181510
 	[1683405654] = true, --906955650318364753
-	[3570496940] = true, --6grek
+	[3570496940] = true, --557595801682182147
 	[1701031992] = true, --660356020220198952
 }
 
 local StaffId = {}
 
 local AdminId = {
-	[1090807044] = true, --Chaotic
-	[2452452863] = true, --imgrek | not grek lmao
-	[3449237561] = true, --Adxn1337
+	[1090807044] = true, --688524343248289796
+	[2452452863] = true, --804245361894883339
+	[3449237561] = true, --977642449721770124
 }
 
-local EnemyId = {
-	[3325255687] = true, --mokrajuleczka AKA 78_axvjb reason: sluring at me n wording at me.
-	[3250210145] = true, --madbouthath AKA joemamaXq reason: saying im skid and locking on legit ppl Xd
-	[274408652] = true, --zeka#1389 (828656825930219571) DylanSantos2 reason: retarded godmode skid on rayx trying to fling while antifling, got his ip also LOL
-}
+local EnemyId = {}
 
 function premium()
 	for _,v in pairs(game:GetService('Players'):GetChildren()) do
