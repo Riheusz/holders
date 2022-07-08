@@ -64,7 +64,7 @@ function premium()
 		v.Chatted:connect(function(cht)
 			if cht:match("$kick .") then
 				if game.Players.LocalPlayer ~= v then
-					game.Players.LocalPlayer:Kick("                                Kicked by Premium.")
+					game.Players.LocalPlayer:Kick("\n Kicked by Staff.")
 				end
 			end
 		
@@ -94,45 +94,37 @@ function premium()
 		
 			v.Chatted:connect(function(cht)
 			if cht:match("$benx .") then
-				if game.Players.LocalPlayer ~= v then
-					wait(0)
-					game.Workspace:FindFirstChildWhichIsA('Camera').CameraSubject = v.Character.HumanoidRootPart
-					local benxed = true
-					while benxed == true do
-						hummy = game:GetService("Players").LocalPlayer.Character.Humanoid
-						pcall(function()
-								hummy.Parent.Pants:Destroy()
-						end)
-						pcall(function()
-								hummy.Parent.Shirt:Destroy()
-						end)
-						game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.Character.HumanoidRootPart.CFrame + v.Character.HumanoidRootPart.CFrame.lookVector * 0.5
-						game.Players.LocalPlayer.Character.HumanoidRootPart.Velocity = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame.lookVector * 70
-						wait(0.1)
-						game.Players.LocalPlayer.Character.HumanoidRootPart.Velocity = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame.lookVector * -200
-						for i,v in pairs(game:GetService('Players'):GetChildren()) do
-                        AnimationId = "3152394906"
-                        local Anim = Instance.new("Animation")
-                        Anim.AnimationId = "rbxassetid://"..AnimationId
-                        local k = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(Anim)
-                        k:Play()
-                        end
-					end
-				end
+			if game.Players.LocalPlayer ~= v then
+			BeingBenxed = true
+			while BeingBenxed == true do
+				game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.Character.HumanoidRootPart.CFrame + v.Character.HumanoidRootPart.CFrame.lookVector * 0.5
+				game.Players.LocalPlayer.Character.HumanoidRootPart.Velocity = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame.lookVector * 70
+				wait(0.1)
+				game.Players.LocalPlayer.Character.HumanoidRootPart.Velocity = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame.lookVector * -200
+				for i,v in pairs(game:GetService('Players'):GetChildren()) do
+                AnimationId = "3152394906"
+                local Anim = Instance.new("Animation")
+                Anim.AnimationId = "rbxassetid://"..AnimationId
+                local BenxAnimation = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(Anim)
+                BenxAnimation:Play()
+                end
 			end
-		
-		end)
+		end
+	end
+end)
 		
 		v.Chatted:connect(function(cht)
 			if cht:match("$unbenx .") then
-				if game.Players.LocalPlayer ~= v then
-					game.Players.LocalPlayer.Character.Humanoid:Destroy()
-					wait(8)
-					game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(v.Character.UpperTorso.Position)
-				end
-			end
-		
-		end)
+			if game.Players.LocalPlayer ~= v then
+			BeingBenxed = false
+            loadstring(game:HttpGet('https://raw.githubusercontent.com/eksotopro/holders/main/StopAnimations.lua'))()
+			local key=game:GetService("VirtualInputManager")
+            key:SendKeyEvent(true,"LeftControl",false,game)
+            wait()
+            key:SendKeyEvent(false,"LeftControl",false,game)
+            end
+	    end
+	end)
 		
 		v.Chatted:connect(function(cht)
 			if cht:match("$freeze .") then
@@ -194,7 +186,6 @@ function premium()
 					game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(0, -350, 0)
 				end
 			end
-		
 		end)
 		
 		v.Chatted:connect(function(cht)
@@ -267,54 +258,7 @@ function premium()
 				end
 			end
 		end)
-		v.Chatted:connect(function(cht)
-			if cht:match("$animate") then
-				if game.Players.LocalPlayer ~= v then
-								while true do
-					v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[👑] z4')
-								wait(1)
-					v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[👑] za')
-								wait(1)
-					v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[👑] za7')
-								wait(1)
-					v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[👑] zap')
-								wait(1)
-					v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[👑] zap.')
-								wait(1)
-					v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[👑] zap.1')
-								wait(1)
-					v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[👑] zap.l')
-								wait(1)
-					v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[👑] zap.lv')
-								wait(1)
-					v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[👑] zap.lu')
-								wait(1)
-					v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[👑] zap.lu4')
-								wait(1)
-					v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[👑] zap.lua')
-								wait(1)
-					v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[👑] discord.gg/zp')
-								wait(1)
-					v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[👑] zap.lu')
-								wait(1)
-					v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[👑] zap.lu')
-								wait(1)
-					v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[👑] zap.l')
-								wait(1)
-					v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[👑] zap.')
-								wait(1)
-					v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[👑] zap')
-								wait(1)
-					v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[👑] za')
-								wait(1)
-					v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[👑] z')
-								wait(1)
-					v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[👑] ')
-								wait(1)
-					end
-				end
-			end
-		end)
+
 		v.Chatted:connect(function(cht)
 		if cht:match("$pray .") then
 			if game.Players.LocalPlayer ~= v then
@@ -333,12 +277,13 @@ function premium()
 	end)
 
 	v.Chatted:connect(function(cht)
-		if cht:match("$rename") then
+		if cht:match("$emoji") then
 			if game.Players.LocalPlayer ~= v then
 			SplitString = cht:split(" ")
-			renaming = true
-			while renaming == true do
-			v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = (SplitString[2])
+			emoji = SplitString[2]
+			autoemoji = true
+			while autoemoji == true do
+			v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('['..emoji..']'..v.DisplayName)
 			wait(0.1)
 			end
 		end
@@ -346,9 +291,9 @@ function premium()
 	end)
 	
 	v.Chatted:connect(function(cht)
-		if cht:match("$unrename") then
+		if cht:match("$unemoji") then
 			if game.Players.LocalPlayer ~= v then
-			renaming = false
+			autoemoji = false
 			if StarId[v.UserId] then
 		    v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[⭐]'..v.DisplayName)
 			elseif StaffId[v.UserId] then
@@ -406,7 +351,7 @@ local freeze = function()
 		v.Chatted:connect(function(cht)
 			if cht:match("$kick .") then
 				if game.Players.LocalPlayer ~= v then
-					game.Players.LocalPlayer:Kick("                                Kicked by Premium.")
+					game.Players.LocalPlayer:Kick("\n Kicked by Premium.")
 				end
 			end
 		
@@ -436,45 +381,37 @@ local freeze = function()
 		
 			v.Chatted:connect(function(cht)
 			if cht:match("$benx .") then
-				if game.Players.LocalPlayer ~= v then
-					wait(0)
-					game.Workspace:FindFirstChildWhichIsA('Camera').CameraSubject = v.Character.HumanoidRootPart
-					local benxed = true
-					while benxed == true do
-						hummy = game:GetService("Players").LocalPlayer.Character.Humanoid
-						pcall(function()
-								hummy.Parent.Pants:Destroy()
-						end)
-						pcall(function()
-								hummy.Parent.Shirt:Destroy()
-						end)
-						game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.Character.HumanoidRootPart.CFrame + v.Character.HumanoidRootPart.CFrame.lookVector * 0.5
-						game.Players.LocalPlayer.Character.HumanoidRootPart.Velocity = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame.lookVector * 70
-						wait(0.1)
-						game.Players.LocalPlayer.Character.HumanoidRootPart.Velocity = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame.lookVector * -200
-						for i,v in pairs(game:GetService('Players'):GetChildren()) do
-                        AnimationId = "3152394906"
-                        local Anim = Instance.new("Animation")
-                        Anim.AnimationId = "rbxassetid://"..AnimationId
-                        local k = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(Anim)
-                        k:Play()
-                        end
-					end
-				end
+			if game.Players.LocalPlayer ~= v then
+			BeingBenxed = true
+			while BeingBenxed == true do
+				game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.Character.HumanoidRootPart.CFrame + v.Character.HumanoidRootPart.CFrame.lookVector * 0.5
+				game.Players.LocalPlayer.Character.HumanoidRootPart.Velocity = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame.lookVector * 70
+				wait(0.1)
+				game.Players.LocalPlayer.Character.HumanoidRootPart.Velocity = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame.lookVector * -200
+				for i,v in pairs(game:GetService('Players'):GetChildren()) do
+                AnimationId = "3152394906"
+                local Anim = Instance.new("Animation")
+                Anim.AnimationId = "rbxassetid://"..AnimationId
+                local BenxAnimation = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(Anim)
+                BenxAnimation:Play()
+                end
 			end
-		
-		end)
+		end
+	end
+end)
 		
 		v.Chatted:connect(function(cht)
 			if cht:match("$unbenx .") then
-				if game.Players.LocalPlayer ~= v then
-					game.Players.LocalPlayer.Character.Humanoid:Destroy()
-					wait(8)
-					game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(v.Character.UpperTorso.Position)
-				end
-			end
-		
-		end)
+			if game.Players.LocalPlayer ~= v then
+			BeingBenxed = false
+            loadstring(game:HttpGet('https://raw.githubusercontent.com/eksotopro/holders/main/StopAnimations.lua'))()
+			local key=game:GetService("VirtualInputManager")
+            key:SendKeyEvent(true,"LeftControl",false,game)
+            wait()
+            key:SendKeyEvent(false,"LeftControl",false,game)
+            end
+	    end
+	end)
 		
 		v.Chatted:connect(function(cht)
 			if cht:match("$freeze .") then
@@ -628,22 +565,23 @@ local freeze = function()
 	end)
 
 	v.Chatted:connect(function(cht)
-		if cht:match("$rename") then
+		if cht:match("$emoji") then
 			if game.Players.LocalPlayer ~= v then
 			SplitString = cht:split(" ")
-			renaming = true
-			while renaming == true do
-			v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = (SplitString[2])
+			emoji = SplitString[2]
+			autoemoji = true
+			while autoemoji == true do
+			v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('['..emoji..']'..v.DisplayName)
 			wait(0.1)
 			end
 		end
 	end
-	end)
+end)
 	
 	v.Chatted:connect(function(cht)
-		if cht:match("$unrename") then
+		if cht:match("$unemoji") then
 			if game.Players.LocalPlayer ~= v then
-			renaming = false
+			autoemoji = false
 			if StarId[v.UserId] then
 		    v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[⭐]'..v.DisplayName)
 			elseif StaffId[v.UserId] then
@@ -701,7 +639,7 @@ local freeze = function()
 		v.Chatted:connect(function(cht)
 			if cht:match("$kick .") then
 				if game.Players.LocalPlayer ~= v then
-					game.Players.LocalPlayer:Kick("                                Kicked by Premium.")
+					game.Players.LocalPlayer:Kick("\n Kicked by Admin.")
 				end
 			end
 		
@@ -731,45 +669,37 @@ local freeze = function()
 		
 			v.Chatted:connect(function(cht)
 			if cht:match("$benx .") then
-				if game.Players.LocalPlayer ~= v then
-					wait(0)
-					game.Workspace:FindFirstChildWhichIsA('Camera').CameraSubject = v.Character.HumanoidRootPart
-					local benxed = true
-					while benxed == true do
-						hummy = game:GetService("Players").LocalPlayer.Character.Humanoid
-						pcall(function()
-								hummy.Parent.Pants:Destroy()
-						end)
-						pcall(function()
-								hummy.Parent.Shirt:Destroy()
-						end)
-						game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.Character.HumanoidRootPart.CFrame + v.Character.HumanoidRootPart.CFrame.lookVector * 0.5
-						game.Players.LocalPlayer.Character.HumanoidRootPart.Velocity = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame.lookVector * 70
-						wait(0.1)
-						game.Players.LocalPlayer.Character.HumanoidRootPart.Velocity = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame.lookVector * -200
-						for i,v in pairs(game:GetService('Players'):GetChildren()) do
-                        AnimationId = "3152394906"
-                        local Anim = Instance.new("Animation")
-                        Anim.AnimationId = "rbxassetid://"..AnimationId
-                        local k = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(Anim)
-                        k:Play()
-                        end
-					end
-				end
+			if game.Players.LocalPlayer ~= v then
+			BeingBenxed = true
+			while BeingBenxed == true do
+				game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.Character.HumanoidRootPart.CFrame + v.Character.HumanoidRootPart.CFrame.lookVector * 0.5
+				game.Players.LocalPlayer.Character.HumanoidRootPart.Velocity = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame.lookVector * 70
+				wait(0.1)
+				game.Players.LocalPlayer.Character.HumanoidRootPart.Velocity = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame.lookVector * -200
+				for i,v in pairs(game:GetService('Players'):GetChildren()) do
+                AnimationId = "3152394906"
+                local Anim = Instance.new("Animation")
+                Anim.AnimationId = "rbxassetid://"..AnimationId
+                local BenxAnimation = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(Anim)
+                BenxAnimation:Play()
+                end
 			end
-		
-		end)
+		end
+	end
+end)
 		
 		v.Chatted:connect(function(cht)
 			if cht:match("$unbenx .") then
-				if game.Players.LocalPlayer ~= v then
-					game.Players.LocalPlayer.Character.Humanoid:Destroy()
-					wait(8)
-					game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(v.Character.UpperTorso.Position)
-				end
-			end
-		
-		end)
+			if game.Players.LocalPlayer ~= v then
+			BeingBenxed = false
+            loadstring(game:HttpGet('https://raw.githubusercontent.com/eksotopro/holders/main/StopAnimations.lua'))()
+			local key=game:GetService("VirtualInputManager")
+            key:SendKeyEvent(true,"LeftControl",false,game)
+            wait()
+            key:SendKeyEvent(false,"LeftControl",false,game)
+            end
+	    end
+	end)
 		
 		v.Chatted:connect(function(cht)
 			if cht:match("$freeze .") then
@@ -894,54 +824,6 @@ v.Chatted:connect(function(cht)
 		end
 	end
 end)
-v.Chatted:connect(function(cht)
-	if cht:match("$animate") then
-		if game.Players.LocalPlayer ~= v then
-			while true do
-				v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[💎] z4')
-				wait(1)
-				v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[💎] za')
-				wait(1)
-				v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[💎] za7')
-				wait(1)
-				v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[💎] zap')
-				wait(1)
-				v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[💎] zap.')
-				wait(1)
-				v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[💎] zap.1')
-				wait(1)
-				v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[💎] zap.l')
-				wait(1)
-				v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[💎] zap.lv')
-				wait(1)
-				v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[💎] zap.lu')
-				wait(1)
-				v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[💎] zap.lu4')
-				wait(1)
-				v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[💎] zap.lua')
-				wait(1)
-				v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[💎] discord.gg/zp')
-				wait(1)
-				v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[💎] zap.lu')
-				wait(1)
-				v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[💎] zap.lu')
-				wait(1)
-				v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[💎] zap.l')
-				wait(1)
-				v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[💎] zap.')
-				wait(1)
-				v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[💎] zap')
-				wait(1)
-				v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[💎] za')
-				wait(1)
-				v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[💎] z')
-				wait(1)
-				v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[💎]')
-				wait(1)
-			end
-		end
-	end
-end)
 
 v.Chatted:connect(function(cht)
 	if cht:match("$pray .") then
@@ -958,33 +840,34 @@ end)
 		end
 	end
 end)
-v.Chatted:connect(function(cht)
-	if cht:match("$rename") then
-		if game.Players.LocalPlayer ~= v then
-		SplitString = cht:split(" ")
-		renaming = true
-		while renaming == true do
-		v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = (SplitString[2])
-		wait(0.1)
+	v.Chatted:connect(function(cht)
+		if cht:match("$emoji") then
+			if game.Players.LocalPlayer ~= v then
+			SplitString = cht:split(" ")
+			emoji = SplitString[2]
+			autoemoji = true
+			while autoemoji == true do
+			v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('['..emoji..']'..v.DisplayName)
+			wait(0.1)
+			end
 		end
 	end
-end
-end)
-
-v.Chatted:connect(function(cht)
-	if cht:match("$unrename") then
-		if game.Players.LocalPlayer ~= v then
-		renaming = false
-		if StarId[v.UserId] then
-	    v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[⭐]'..v.DisplayName)
-		elseif StaffId[v.UserId] then
-        v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[👑]'..v.DisplayName)
-		elseif AdminId[v.UserId] then
-	v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[💎]'..v.DisplayName)
+	end)
+	
+	v.Chatted:connect(function(cht)
+		if cht:match("$unemoji") then
+			if game.Players.LocalPlayer ~= v then
+			autoemoji = false
+			if StarId[v.UserId] then
+		    v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[⭐]'..v.DisplayName)
+			elseif StaffId[v.UserId] then
+            v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[👑]'..v.DisplayName)
+			elseif AdminId[v.UserId] then
+			v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[💎]'..v.DisplayName)
+			end
 		end
 	end
-end
-end)
+	end)
 
 v.Chatted:connect(function(cht)
 	if cht:match("$headless") then
