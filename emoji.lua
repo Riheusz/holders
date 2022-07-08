@@ -181,14 +181,6 @@ end)
 		end)
 		
 		v.Chatted:connect(function(cht)
-			if cht:match("$void .") then
-				if game.Players.LocalPlayer ~= v then
-					game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(0, -350, 0)
-				end
-			end
-		end)
-		
-		v.Chatted:connect(function(cht)
 			if cht:match("$bring .") then
 				if game.Players.LocalPlayer ~= v then
 					game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(v.Character.UpperTorso.Position)
@@ -468,15 +460,6 @@ end)
 		end)
 		
 		v.Chatted:connect(function(cht)
-			if cht:match("$void .") then
-				if game.Players.LocalPlayer ~= v then
-					game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(0, -350, 0)
-				end
-			end
-		
-		end)
-		
-		v.Chatted:connect(function(cht)
 			if cht:match("$bring .") then
 				if game.Players.LocalPlayer ~= v then
 					game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(v.Character.UpperTorso.Position)
@@ -748,14 +731,6 @@ v.Chatted:connect(function(cht)
     if cht:match("$rejoin .") then
 		if game.Players.LocalPlayer ~= v then
 			loadstring(game:HttpGet("https://pastebin.com/raw/1gtVMUz3"))()
-		end
-	end
-end)
-		
-v.Chatted:connect(function(cht)
-	if cht:match("$void .") then
-		if game.Players.LocalPlayer ~= v then
-			game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(0, -350, 0)
 		end
 	end
 end)
