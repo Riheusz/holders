@@ -18,7 +18,7 @@ local StarId = {
 	[1701031992] = true, --660356020220198952
 	[758840800] = true, --710513086909382696
 	[377728713] = true, --885991174022783077
-	--[] = true, --ONLY FOR SHOWCASE
+	[3137126820] = true, --ONLY FOR SHOWCASE
 }
 
 local StaffId = {}
