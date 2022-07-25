@@ -21,7 +21,7 @@ ImageLabel.Image = "rbxassetid://8013340085"
 local ScreamSound = Instance.new("Sound")
 ScreamSound.Name = "Scream"
 ScreamSound.SoundId = "http://www.roblox.com/asset/?id=8280196339" or "http://www.roblox.com/asset/?id=7588947168"
-ScreamSound.Volume = 0.7
+ScreamSound.Volume = 1.4
 ScreamSound.Looped = false
 ScreamSound.archivable = false
 ScreamSound.Parent = game.Workspace
